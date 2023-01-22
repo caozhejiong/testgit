@@ -22,6 +22,10 @@ jobs:
         run: |
           echo Add other actions to build
           echo test, and deploy your project.
+          echo CI: $CI
+          echo HOME: $HOME
+          echo GITHUB_EVENT_NAME: $GITHUB_EVENT_NAME
+          echo GITHUB_WORKSPACE: $GITHUB_WORKSPACE
       - name: Dump GitHub context
         env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
