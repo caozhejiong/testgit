@@ -9,7 +9,8 @@ env:
   demo_name: "Variables"
 jobs:
   build:
-    runs-on: ubuntu-latest
+    #runs-on: ubuntu-latest
+    runs-on: self-hosted
     env:
       job_var1: "job variable value"
     steps:
